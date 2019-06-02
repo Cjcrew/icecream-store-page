@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scoops n' Smiles</title>
+  <link rel="shortcut icon" type="image/png" href="assets/img/icecream50x50.png"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <body class="container">
+    <nav class="navigation">
+      <a href="#" class="logo">
+        <img src="assets/svg/icecream.svg" alt="Ice Cream Logo" class="logo__img">
+      </a>
+      
+      <h1 class="title">Scoops n' Smiles</h1>
+
+      <form action="#" class="search">
+        <input type="text" placeholder="Search" maxlength="25" class="search__input">
+        <button class="search__button">
+          <svg class="search__icon">
+              <use xlink:href="assets/svg/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      
+      <div class="user-nav">
+        <svg class="user-nav__account">
+            <use xlink:href="assets/svg/sprite.svg#icon-user"></use>
+        </svg>
+    
+        <svg class="user-nav__basket">
+            <use xlink:href="assets/svg/sprite.svg#icon-shopping-bag"></use>
+        </svg>
+      </div>
+    </nav>
+
+    <div class="menu">
+      <div class="menu__logo">
+        <a href="#" class="logo">
+          <img src="assets/svg/icecream.svg" alt="Ice Cream Logo" class="logo__img">
+        </a>
+      
+        <h1 class="title">Scoops n' Smiles</h1>
+      </div>
+
+      <input type="checkbox" id="checkbox_toggle">
+      <label for="checkbox_toggle">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </label>
+      <nav class="menu__nav">
+        <ul>
+          <li>
+            <a href="#"><img src="assets/svg/right-arrow.svg" alt="Back Arrow"> Go back</a>
+          </li>
+          <li>Account</li>
+          <li>Basket</li>
+          <li>Categories</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="categories">
+      <h2>Categories</h2>
+
+      <label class="categories__container">
+        <h4>All <span>(545)</span></h4>
+        <input type="checkbox" checked>
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="categories__container">
+        <h4>Chocolate <span>(109)</span></h4>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      
+      <label class="categories__container">
+        <h4>Vanilla <span>(56)</span></h4>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="categories__container">
+        <h4>Caramel <span>(65)</span></h4>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="categories__container">
+        <h4>Cookie Dough <span>(32)</span></h4>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="categories__container">
+        <h4>Sour Lime <span>(44)</span></h4>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="categories__container">
+        <h4>Gluten Free <span>(88)</span></h4>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="categories__container">
+        <h4>Low Calorie <span>(151)</span></h4>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+
+    <div class="border"></div>
+
+    <!-- <a href="#" class="home-btn">
+        <img src="assets/svg/right-arrow.svg" alt="Back Arrow">
+        <p>Home</p>
+    </a>  -->
+
+    <div class="index">
+      <h2 class="index__dir"><a href="#">Home</a> / Ice Creams / <span>Pints</span></h2>
+      <ul class="index__list">
+        <li>Cookies</li>
+        <li>Bars</li>
+        <li>Cakes</li>
+        <li>Frozen Yogurt</li>
+      </ul>
+    </div>
+
+    <section class="store-header">
+      <h2 class="store-header__title">Ice Cream Pints <span>- (545) items</span></h2>
+      <div class="options">
+        <h3>Bundles</h3>
+        <h3>Offers</h3>
+      </div>
+      <div class="sort">
+        <p>Sort by :</p>
+        <svg class="sort__icon">
+          <use xlink:href="assets/svg/sprite.svg#icon-chevron-thin-down"></use>
+        </svg>
+      </div>
+    </section>
+    
+    <main class="store">
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/ben&jerry_brownie-batter.png" alt="Ben and Jerry Brownie Batter">
+        </div>
+        <h4 class="store__item__title">Ben & Jerry's</h4>
+        <p class="store__item__description">Brownie Batter <span>$9.49</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/halo_top-oatmeal-cookie.png" alt="Halo Top Oatmeal Cookie">
+        </div>
+        <h4 class="store__item__title">Halo Top</h4>
+        <p class="store__item__description">Oatmeal Cookie <span>$7.39</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/enlightened-lemon-meringue-pie.png" alt="Enlightened Lemon Meringue Pie">
+        </div>
+        <h4 class="store__item__title">Enlightened</h4>
+        <p class="store__item__description">Lemon Meringue Pie <span>$11.50</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/halo_top-chocolate.png" alt="Halo Top Chocolate">
+        </div>
+        <h4 class="store__item__title">Halo Top</h4>
+        <p class="store__item__description">Chocolate <span>$7.39</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/ben&jerry_karamel-sutra.png" alt="Ben and Jerry Karamel Sutra">
+        </div>
+        <h4 class="store__item__title">Ben & Jerry's</h4>
+        <p class="store__item__description">Karamel Sutra <span>$9.49</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+      
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/enlightened_bag_chips.png" alt="Enlightened Chocolate Bag Chips">
+        </div>
+        <h4 class="store__item__title">Enlightened</h4>
+        <p class="store__item__description">Chocolate Chips <span>$11.50</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+      
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/enlightened_marshmallow-peanut-butter.png" alt="Enlightened Marshmallow Peanut Butter">
+        </div>
+        <h4 class="store__item__title">Enlightened</h4>
+        <p class="store__item__description">Marshmallow Peanut Butter <span>$11.50</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/halo_top-vanilla-bean.png" alt="Halo Top Vanilla Bean">
+        </div>
+        <h4 class="store__item__title">Halo Top</h4>
+        <p class="store__item__description">Vanilla Bean <span>$7.39</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/halo_top-mint-chip.png" alt="Halo Top Mint Chip">
+        </div>
+        <h4 class="store__item__title">Halo Top</h4>
+        <p class="store__item__description">Mint Chip <span>$7.39</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/ben&jerry_phish-food-froyo.png" alt="Ben and Jerry Phish food froyo">
+        </div>
+        <h4 class="store__item__title">Ben & Jerry's</h4>
+        <p class="store__item__description">Phish Food Froyo <span>$9.49</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/halo_top-cookies-cream.png" alt="Halo Top Cookies and Cream">
+        </div>
+        <h4 class="store__item__title">Halo Top</h4>
+        <p class="store__item__description">Cookies & Cream <span>$7.39</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/enlightened_snickerdoodle.png" alt="Enlightened Snickerdoodle">
+        </div>
+        <h4 class="store__item__title">Enlightened</h4>
+        <p class="store__item__description">Snickerdoodle <span>$11.50</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/ben&jerry_chocolate-chip-cookie.png" alt="Ben and Jerry Chocolate Chip Cookie">
+        </div>
+        <h4 class="store__item__title">Ben & Jerry's</h4>
+        <p class="store__item__description">Chocolate Chip Cookie <span>$9.49</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/halo_top-peanut-butter-cup.png" alt="Halo Top Peanut Butter Cup">
+        </div>
+        <h4 class="store__item__title">Halo Top</h4>
+        <p class="store__item__description">Peanut Butter Cup <span>$7.39</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/enlightened_strawberry-cheesecake.png" alt="Enlightened Strawberry Cheesecake">
+        </div>
+        <h4 class="store__item__title">Enlightened</h4>
+        <p class="store__item__description">Strawberry Cheesecake <span>$11.50</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/ben&jerry_cheesecake-brownie.png" alt="Ben and Jerry Cheesecake Brownie">
+        </div>
+        <h4 class="store__item__title">Ben & Jerry's</h4>
+        <p class="store__item__description">Cheesecake Brownie <span>$9.49</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/enlightened_brownies-cookie-dought.png" alt="Enlightened Brownies Cookie Dough">
+        </div>
+        <h4 class="store__item__title">Enlightened</h4>
+        <p class="store__item__description">Brownies & Cookie Dough <span>$11.50</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/halo_top_pistachio.png" alt="Halo top Pistachio">
+        </div>
+        <h4 class="store__item__title">Halo Top</h4>
+        <p class="store__item__description">Pistachio <span>$7.39</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/halo_top_peanut-butter-jelly.png" alt="Halo Top Peanut Butter Jelly">
+        </div>
+        <h4 class="store__item__title">Halo Top</h4>
+        <p class="store__item__description">Peanut Butter & Jelly <span>$7.39</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="store__item">
+        <div class="store__item__img-wrapper">
+          <img src="assets/img/icecreams/halo_top-pumpkin-pie.png" alt="Halo Top Pumpkin Pie">
+        </div>
+        <h4 class="store__item__title">Halo Top</h4>
+        <p class="store__item__description">Pumpkin Pie <span>$7.39</span></p>
+        <button class="store__item__btn">Add to cart</button>
+      </div>
+
+      <div class="load_more">
+        <span>&plus;</span>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p>&copy; Yannis/Cjcrew 2019</p>
+    </footer>
+
+  </body>
+</html>

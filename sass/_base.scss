@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+// CBRS
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+// VARIABLES
+// fonts
+$font-main: 'Roboto', sans-serif;
+
+// colors
+$color-primary: #2d3436;
+$gray-light-1: #dfe6e9;
+$gray-light-2: #b2bec3;
+$gray-light-3: rgba( #000000, .5);
+$color-contrast-1: #f662a7;
+$color-contrast-2: #fd89c1;
+$color-blue-1: #0984e3;
+
+// Breakpoints
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-tablet: 48.250em; // 772px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 25.875em; // 414px
+$bp-iphone5: 20.000em; // 320px
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% => 1rem 10px
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  min-height: 100%;
+}
+
+.container {
+  display: grid;
+
+  grid-template-rows: 12.5vh minmax(min-content, 20vh) minmax(min-content, auto) [store-end] 5vh [last-line];
+  // grid-template-columns: minmax(min-content, 30rem) repeat(auto-fit, minmax(34rem, 1fr));
+  grid-template-columns: minmax(min-content, 34rem) [border-start] min-content [border-end] repeat(4, 1fr);
+  grid-row-gap: 2.5rem;
+  
+  @media only screen and (max-width: $bp-tablet) {
+    grid-template-rows: minmax(min-content, auto) minmax(min-content, 20vh) minmax(min-content, auto) [store-end] 5vh [last-line];
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-row-gap: 0;
+  }
+}
+
+.border {
+  grid-row: 2 / store-end;
+  grid-column: border-start / border-end;
+
+  height: 100%;
+  width: 3px;
+  background-color: $gray-light-1;
+
+  @media only screen and (max-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.index {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+
+  padding-left: 2rem;
+  color: $gray-light-3;
+
+  &__dir {
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding-bottom: 1.8rem;
+
+    a {
+      text-decoration: none;
+      color: $gray-light-3;
+      transition: all .2s;
+
+      &:hover {
+        cursor: pointer;
+        color: $color-primary;
+      }
+    }
+    
+    
+    span {
+      color: rgba($color-primary, .7);
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      padding-top: 1.8rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    color: $color-primary;
+    font-weight: 400;
+    font-size: 1.5rem;
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      height: 5rem;
+      width: 100%;
+    }
+
+    li:hover {
+      cursor: pointer;
+      color: $gray-light-3;
+    }
+  }
+
+  @media only screen and (max-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.load_more {
+  grid-column: 1 / -1;
+  
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  box-shadow: 0px 3px 5px 1px rgba($gray-light-1, .8);
+  font-size: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all .2s ease;
+  transition-delay: .05s;
+
+  &:hover {
+    cursor: pointer;
+    transform: rotate(90deg);
+    backface-visibility: hidden;
+  }
+
+  span {
+    color: $color-contrast-1;
+  }
+
+  @media only screen and (max-width: $bp-tablet) {
+    margin-bottom: 1rem;
+  }
+
+}
+
+// Highlight
+::selection {
+  background-color: rgba($color-contrast-2, .3);
+  color: $color-primary;
+}
+
+.footer {
+  grid-row: store-end / last-line;
+  grid-column: 1 / -1;
+ 
+  display: flex;
+  align-items: center;
+
+  font-size: 1.4rem;
+  padding: 1rem;
+  padding-left: 2.5rem;
+  color: $gray-light-2;
+
+  border-top: 2px solid rgba($gray-light-1, .5);
+  
+  @media only screen and (max-width: $bp-tablet) {
+    justify-content: center;
+  }
+}

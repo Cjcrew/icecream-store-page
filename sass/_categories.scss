@@ -1,0 +1,84 @@
+//////////////////////
+// Categories Section
+.categories {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  align-self: start;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-top: 2rem;
+
+  &__container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none; // prevent text highlighting
+    padding-left: 3rem;
+    color: $gray-light-3;
+
+    &:not(:last-child) {
+      margin-bottom: 1.8rem;
+    }
+    
+    & input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    // Add gray background on hover
+    &:hover input ~ .checkmark {
+      background-color: $gray-light-1;
+    }
+
+    // Add background color when checkbox is checked
+    & input:checked ~ .checkmark {
+      background-color: #55efc4;
+
+      &:after {
+        display: block;
+      }
+    }
+
+    & .checkmark:after {
+      left: 5.5px;
+      top: 2px;
+      width: 5px;
+      height: 1rem;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+
+      @media only screen and (max-width: $bp-large) {
+        left: 3.5px;
+        top: 1px;
+      }
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    border-radius: .3rem;
+    border: 2px solid $gray-light-1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: $bp-tablet) {
+    display: none;
+  }
+ 
+}

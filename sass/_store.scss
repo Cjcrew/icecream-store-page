@@ -84,6 +84,9 @@
       display: none;
       transform: translateY(-100%);
       transition: all .06s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      
+      // Fixes button box-shadow rendering bug on Chrome
+      backface-visibility: hidden;
 
       background-color: #ffffff;
       border: none;

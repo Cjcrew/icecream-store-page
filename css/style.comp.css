@@ -448,6 +448,7 @@ body {
       display: none;
       transform: translateY(-100%);
       transition: all 0.06s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      backface-visibility: hidden;
       background-color: #ffffff;
       border: none;
       border-radius: 50px;
